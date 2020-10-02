@@ -133,7 +133,7 @@ h1 {
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
 <script>
-  
+  //variable declare
 var w = window.innerWidth,
     h = window.innerHeight,
     canvas = document.getElementById('bubble'),
@@ -146,10 +146,10 @@ var w = window.innerWidth,
     speed = 20,
     lights = new Array,
     colors = ['#d59254','#ffffff','#1f2839','#cf7693'];
-
+//set atribute
 canvas.setAttribute('width',w);
 canvas.setAttribute('height',h);
-
+//function crate init();
 function init() {
   time = 0;
   count = 0;
@@ -165,7 +165,7 @@ function init() {
     }
   }
 }
-
+//function crate bubble
 function bubble() {
   ctx.clearRect(0,0,w,h);
 
@@ -196,7 +196,7 @@ bubble();
 //navigation (this is my code)
 var animation = 'easeOutCubic';
     delay     = 60;
-
+//jQuery called
 $(document)
   .on('click', '.fa-bars', function(){
     var i = 0;
